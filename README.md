@@ -116,18 +116,38 @@ SELECT COUNT(*) FROM processed_data;
 
 ### System Flow
 
-```
-External API (JSONPlaceholder)
-        ↓
-   API Client (Go)
-        ↓
-PostgreSQL + File System (raw data)
-        ↓
-   Transformer (Go)
-        ↓
-PostgreSQL + File System (processed data)
-        ↓
-  Metrics + Logs
+```mermaid
+flowchart TB
+    API[External API<br/>JSONPlaceholder]
+    Client[API Client Go<br/>HTTP Request Handler]
+    RawDB[(PostgreSQL<br/>raw_data table)]
+    RawFS[/File System<br/>data/raw//]
+    Transform[Transformer Go<br/>Data Processing]
+    ProcDB[(PostgreSQL<br/>processed_data table)]
+    ProcFS[/File System<br/>data/processed//]
+    Metrics[Prometheus Metrics<br/>/metrics endpoint]
+    Logs[Structured Logs<br/>logs/etl.log]
+    
+    API -->|Fetch every 30s| Client
+    Client -->|Store Raw JSON| RawDB
+    Client -->|Save Timestamped Files| RawFS
+    RawDB -->|Read for Processing| Transform
+    Transform -->|Validate & Normalize| ProcDB
+    Transform -->|Save Processed JSON| ProcFS
+    Client -.->|Track Operations| Metrics
+    Transform -.->|Track Operations| Metrics
+    Client -.->|Log Events| Logs
+    Transform -.->|Log Events| Logs
+    
+    style API fill:#e1f5ff
+    style Client fill:#b3e5fc
+    style RawDB fill:#ffecb3
+    style RawFS fill:#fff9c4
+    style Transform fill:#c8e6c9
+    style ProcDB fill:#ffecb3
+    style ProcFS fill:#fff9c4
+    style Metrics fill:#f8bbd0
+    style Logs fill:#f8bbd0
 ```
 
 ### Component Overview
