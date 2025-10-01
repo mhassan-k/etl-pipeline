@@ -13,8 +13,8 @@ etl-pipeline
 *.out
 
 # Data directories  -- disbable for show case in github
-#data/
-#logs/
+data/
+logs/
 
 # Environment files
 .env
