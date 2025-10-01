@@ -1,0 +1,278 @@
+INFO: 2025/10/01 13:01:03 main.go:32: Starting ETL Pipeline Service...
+INFO: 2025/10/01 13:01:03 main.go:36: Configuration loaded: API=https://jsonplaceholder.typicode.com/posts, Interval=30s
+INFO: 2025/10/01 13:01:03 main.go:48: Connected to PostgreSQL database
+INFO: 2025/10/01 13:01:03 main.go:72: Starting HTTP server on port 8080
+INFO: 2025/10/01 13:01:03 service.go:47: ETL pipeline started with interval: 30s
+INFO: 2025/10/01 13:01:03 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:01:03 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:01:04 client.go:72: API request successful: fetched 100 records in 0.23s
+INFO: 2025/10/01 13:01:04 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:01:04 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130104.json
+INFO: 2025/10/01 13:01:04 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:01:04 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:01:04 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:01:04 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130104.json
+INFO: 2025/10/01 13:01:04 service.go:120: ========== ETL Pipeline Cycle Completed in 0.26s ==========
+INFO: 2025/10/01 13:01:33 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:01:33 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:01:34 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:01:34 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:01:34 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130134.json
+INFO: 2025/10/01 13:01:34 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:01:34 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:01:34 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:01:34 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130134.json
+INFO: 2025/10/01 13:01:34 service.go:120: ========== ETL Pipeline Cycle Completed in 0.09s ==========
+INFO: 2025/10/01 13:02:03 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:02:03 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:02:04 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:02:04 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:02:04 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130204.json
+INFO: 2025/10/01 13:02:04 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:02:04 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:02:04 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:02:04 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130204.json
+INFO: 2025/10/01 13:02:04 service.go:120: ========== ETL Pipeline Cycle Completed in 0.08s ==========
+INFO: 2025/10/01 13:02:33 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:02:33 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:02:34 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:02:34 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:02:34 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130234.json
+INFO: 2025/10/01 13:02:34 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:02:34 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:02:34 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:02:34 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130234.json
+INFO: 2025/10/01 13:02:34 service.go:120: ========== ETL Pipeline Cycle Completed in 0.09s ==========
+INFO: 2025/10/01 13:03:03 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:03:03 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:03:04 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:03:04 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:03:04 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130304.json
+INFO: 2025/10/01 13:03:04 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:03:04 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:03:04 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:03:04 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130304.json
+INFO: 2025/10/01 13:03:04 service.go:120: ========== ETL Pipeline Cycle Completed in 0.09s ==========
+INFO: 2025/10/01 13:03:33 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:03:33 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:03:34 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:03:34 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:03:34 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130334.json
+INFO: 2025/10/01 13:03:34 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:03:34 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:03:34 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:03:34 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130334.json
+INFO: 2025/10/01 13:03:34 service.go:120: ========== ETL Pipeline Cycle Completed in 0.10s ==========
+INFO: 2025/10/01 13:04:03 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:04:03 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:04:04 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:04:04 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:04:04 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130404.json
+INFO: 2025/10/01 13:04:04 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:04:04 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:04:04 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:04:04 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130404.json
+INFO: 2025/10/01 13:04:04 service.go:120: ========== ETL Pipeline Cycle Completed in 0.09s ==========
+INFO: 2025/10/01 13:04:33 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:04:33 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:04:34 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:04:34 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:04:34 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130434.json
+INFO: 2025/10/01 13:04:34 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:04:34 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:04:34 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:04:34 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130434.json
+INFO: 2025/10/01 13:04:34 service.go:120: ========== ETL Pipeline Cycle Completed in 0.09s ==========
+INFO: 2025/10/01 13:05:03 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:05:03 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:05:04 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:05:04 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:05:04 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130504.json
+INFO: 2025/10/01 13:05:04 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:05:04 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:05:04 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:05:04 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130504.json
+INFO: 2025/10/01 13:05:04 service.go:120: ========== ETL Pipeline Cycle Completed in 0.09s ==========
+INFO: 2025/10/01 13:05:33 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:05:33 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:05:34 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:05:34 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:05:34 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130534.json
+INFO: 2025/10/01 13:05:34 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:05:34 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:05:34 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:05:34 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130534.json
+INFO: 2025/10/01 13:05:34 service.go:120: ========== ETL Pipeline Cycle Completed in 0.08s ==========
+INFO: 2025/10/01 13:06:03 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:06:03 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:06:04 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:06:04 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:06:04 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130604.json
+INFO: 2025/10/01 13:06:04 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:06:04 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:06:04 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:06:04 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130604.json
+INFO: 2025/10/01 13:06:04 service.go:120: ========== ETL Pipeline Cycle Completed in 0.10s ==========
+INFO: 2025/10/01 13:06:33 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:06:33 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:06:34 client.go:72: API request successful: fetched 100 records in 0.07s
+INFO: 2025/10/01 13:06:34 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:06:34 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130634.json
+INFO: 2025/10/01 13:06:34 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:06:34 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:06:34 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:06:34 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130634.json
+INFO: 2025/10/01 13:06:34 service.go:120: ========== ETL Pipeline Cycle Completed in 0.09s ==========
+INFO: 2025/10/01 13:07:03 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:07:03 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:07:04 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:07:04 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:07:04 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130704.json
+INFO: 2025/10/01 13:07:04 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:07:04 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:07:04 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:07:04 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130704.json
+INFO: 2025/10/01 13:07:04 service.go:120: ========== ETL Pipeline Cycle Completed in 0.10s ==========
+INFO: 2025/10/01 13:07:33 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:07:33 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:07:34 client.go:72: API request successful: fetched 100 records in 0.07s
+INFO: 2025/10/01 13:07:34 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:07:34 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130734.json
+INFO: 2025/10/01 13:07:34 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:07:34 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:07:34 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:07:34 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130734.json
+INFO: 2025/10/01 13:07:34 service.go:120: ========== ETL Pipeline Cycle Completed in 0.11s ==========
+INFO: 2025/10/01 13:08:03 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:08:03 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:08:04 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:08:04 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:08:04 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130804.json
+INFO: 2025/10/01 13:08:04 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:08:04 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:08:04 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:08:04 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130804.json
+INFO: 2025/10/01 13:08:04 service.go:120: ========== ETL Pipeline Cycle Completed in 0.09s ==========
+INFO: 2025/10/01 13:08:33 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:08:33 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:08:34 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:08:34 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:08:34 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130834.json
+INFO: 2025/10/01 13:08:34 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:08:34 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:08:34 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:08:34 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130834.json
+INFO: 2025/10/01 13:08:34 service.go:120: ========== ETL Pipeline Cycle Completed in 0.09s ==========
+INFO: 2025/10/01 13:09:03 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:09:03 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:09:04 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:09:04 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:09:04 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130904.json
+INFO: 2025/10/01 13:09:04 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:09:04 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:09:04 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:09:04 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130904.json
+INFO: 2025/10/01 13:09:04 service.go:120: ========== ETL Pipeline Cycle Completed in 0.11s ==========
+INFO: 2025/10/01 13:09:33 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:09:33 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:09:34 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:09:34 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:09:34 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_130934.json
+INFO: 2025/10/01 13:09:34 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:09:34 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:09:34 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:09:34 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_130934.json
+INFO: 2025/10/01 13:09:34 service.go:120: ========== ETL Pipeline Cycle Completed in 0.10s ==========
+INFO: 2025/10/01 13:10:03 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:10:03 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:10:04 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:10:04 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:10:04 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_131004.json
+INFO: 2025/10/01 13:10:04 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:10:04 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:10:04 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:10:04 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_131004.json
+INFO: 2025/10/01 13:10:04 service.go:120: ========== ETL Pipeline Cycle Completed in 0.09s ==========
+INFO: 2025/10/01 13:10:33 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:10:33 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:10:34 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:10:34 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:10:34 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_131034.json
+INFO: 2025/10/01 13:10:34 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:10:34 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:10:34 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:10:34 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_131034.json
+INFO: 2025/10/01 13:10:34 service.go:120: ========== ETL Pipeline Cycle Completed in 0.09s ==========
+INFO: 2025/10/01 13:11:03 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:11:03 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:11:04 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:11:04 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:11:04 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_131104.json
+INFO: 2025/10/01 13:11:04 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:11:04 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:11:04 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:11:04 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_131104.json
+INFO: 2025/10/01 13:11:04 service.go:120: ========== ETL Pipeline Cycle Completed in 0.08s ==========
+INFO: 2025/10/01 13:11:33 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:11:33 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:11:34 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:11:34 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:11:34 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_131134.json
+INFO: 2025/10/01 13:11:34 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:11:34 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:11:34 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:11:34 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_131134.json
+INFO: 2025/10/01 13:11:34 service.go:120: ========== ETL Pipeline Cycle Completed in 0.10s ==========
+INFO: 2025/10/01 13:12:03 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:12:03 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:12:04 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:12:04 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:12:04 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_131204.json
+INFO: 2025/10/01 13:12:04 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:12:04 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:12:04 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:12:04 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_131204.json
+INFO: 2025/10/01 13:12:04 service.go:120: ========== ETL Pipeline Cycle Completed in 0.09s ==========
+INFO: 2025/10/01 13:12:33 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:12:33 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:12:34 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:12:34 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:12:34 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_131234.json
+INFO: 2025/10/01 13:12:34 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:12:34 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:12:34 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:12:34 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_131234.json
+INFO: 2025/10/01 13:12:34 service.go:120: ========== ETL Pipeline Cycle Completed in 0.09s ==========
+INFO: 2025/10/01 13:13:03 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:13:03 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:13:04 client.go:72: API request successful: fetched 100 records in 0.07s
+INFO: 2025/10/01 13:13:04 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:13:04 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_131304.json
+INFO: 2025/10/01 13:13:04 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:13:04 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:13:04 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:13:04 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_131304.json
+INFO: 2025/10/01 13:13:04 service.go:120: ========== ETL Pipeline Cycle Completed in 0.10s ==========
+INFO: 2025/10/01 13:13:33 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:13:33 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:13:34 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:13:34 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:13:34 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_131334.json
+INFO: 2025/10/01 13:13:34 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:13:34 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:13:34 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:13:34 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_131334.json
+INFO: 2025/10/01 13:13:34 service.go:120: ========== ETL Pipeline Cycle Completed in 0.08s ==========
+INFO: 2025/10/01 13:14:03 service.go:68: ========== Starting ETL Pipeline Cycle ==========
+INFO: 2025/10/01 13:14:03 client.go:39: Fetching data from API: https://jsonplaceholder.typicode.com/posts
+INFO: 2025/10/01 13:14:04 client.go:72: API request successful: fetched 100 records in 0.06s
+INFO: 2025/10/01 13:14:04 service.go:85: Raw data inserted into database: 100 records
+INFO: 2025/10/01 13:14:04 storage.go:57: Raw data saved successfully: data/raw/raw_data_20251001_131404.json
+INFO: 2025/10/01 13:14:04 transformer.go:37: Starting transformation of 100 records
+INFO: 2025/10/01 13:14:04 transformer.go:58: Transformation successful: 100 records processed
+INFO: 2025/10/01 13:14:04 service.go:109: Processed data inserted into database: 100 records
+INFO: 2025/10/01 13:14:04 storage.go:91: Processed data saved successfully: data/processed/processed_data_20251001_131404.json
+INFO: 2025/10/01 13:14:04 service.go:120: ========== ETL Pipeline Cycle Completed in 0.08s ==========
+INFO: 2025/10/01 13:14:25 main.go:90: Shutdown signal received, stopping ETL pipeline...
+INFO: 2025/10/01 13:14:25 main.go:100: ETL Pipeline Service stopped gracefully
+INFO: 2025/10/01 13:14:25 service.go:58: ETL pipeline stopped

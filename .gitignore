@@ -1,0 +1,31 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+etl-pipeline
+
+# Test binary
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Data directories  -- disbable for show case in github
+#data/
+#logs/
+
+# Environment files
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
