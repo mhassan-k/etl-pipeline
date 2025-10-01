@@ -398,19 +398,38 @@ docker-compose logs etl-pipeline | tail -50
 
 ## 🚀 Productionization Strategy
 
-### Cloud Architecture (AWS-Based Recommendation)
+### Cloud Architecture - Two AWS Deployment Options
 
-#### Compute Layer
+#### **Option 1: AWS Managed Services** (Recommended for Quick Setup)
 
-**AWS ECS Fargate** (Recommended)
+| Component | AWS Service | Cost/Month | Benefits |
+|-----------|-------------|------------|----------|
+| **Compute** | ECS Fargate | ~$50 | Serverless, no server management |
+| **Database** | RDS PostgreSQL | ~$150 | Automated backups, Multi-AZ |
+| **Storage** | S3 | ~$25 | Unlimited, lifecycle policies |
+| **Monitoring** | CloudWatch | ~$30 | Native integration |
+| **Total** | | **~$255** | Easy setup, fully managed |
+
+---
+
+#### **Option 2: Open Source Stack on AWS** ⭐ (Recommended for Cost & Flexibility)
+
+| Component | Open Source Tool | Cost/Month | Benefits |
+|-----------|------------------|------------|----------|
+| **Compute** | EKS  | ~$70 | Kubernetes flexibility |
+| **Database** | Self-hosted PostgreSQL | ~$30 | Full control, no limits |
+| **Storage** | S3 + MinIO (optional) | ~$25 | S3-compatible, hybrid |
+| **Monitoring** | Prometheus + Grafana + Loki | ~$20 | Complete observability |
+| **Total** | | **~$145** | 43% cost savings |
+
+
+#### Compute Layer (Managed Services Details)
+
+**AWS ECS Fargate**
 - Fully managed, serverless containers
 - Auto-scaling: 2-10 tasks based on CPU/memory
 - Task definition: 0.5 vCPU, 1GB memory
 - Blue-green deployment for zero downtime
-
-**Alternative: AWS EKS**
-- For complex Kubernetes orchestration needs
-- Better for multi-service deployments
 
 #### Data Storage
 
@@ -507,32 +526,6 @@ GitHub → AWS CodeBuild → Amazon ECR → ECS Fargate
 - RDS Multi-AZ for automatic database failover
 - Application Load Balancer for health checks
 
-**Disaster Recovery:**
-- **RTO (Recovery Time Objective)**: < 15 minutes
-- **RPO (Recovery Point Objective)**: < 5 minutes
-- RDS: Automated snapshots every 5 minutes
-- S3: Versioning + cross-region replication
-- Infrastructure as Code: Terraform/CloudFormation
-
-#### Cost Optimization
-
-**Monthly Cost Estimate (AWS us-east-1):**
-
-| Service | Configuration | Monthly Cost |
-|---------|--------------|--------------|
-| ECS Fargate | 2 tasks (0.5 vCPU, 1GB) | ~$50 |
-| RDS PostgreSQL | db.t3.medium, Multi-AZ | ~$150 |
-| S3 Storage | 1TB, Intelligent-Tiering | ~$25 |
-| CloudWatch | Logs + Metrics | ~$30 |
-| Data Transfer | Egress | ~$20 |
-| **Total** | | **~$275/month** |
-
-**Optimization Strategies:**
-- Fargate Spot: 70% savings for non-critical workloads
-- Reserved Instances for RDS: 40% savings with 1-year commitment
-- S3 Lifecycle policies: Automatic tier transitions
-- Right-sizing based on actual usage metrics
-- CloudWatch Logs retention: 30 days (not indefinite)
 
 ### Alternative Cloud Providers
 
@@ -548,18 +541,6 @@ GitHub → AWS CodeBuild → Amazon ECR → ECS Fargate
 - Better BigQuery integration for analytics
 - Cheaper egress costs
 - Simpler pricing model
-
-#### Microsoft Azure
-
-**Services:**
-- Compute: Azure Container Instances or AKS
-- Database: Azure Database for PostgreSQL
-- Storage: Azure Blob Storage
-- Monitoring: Azure Monitor + Application Insights
-
-**Benefits:**
-- Better for Microsoft-centric environments
-- Strong Active Directory integration
 
 ### Production Best Practices
 
