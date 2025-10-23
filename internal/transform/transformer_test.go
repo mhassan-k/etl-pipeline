@@ -3,7 +3,6 @@ package transform
 import (
 	"testing"
 
-	"github.com/mohammedhassan/etl-pipeline/internal/database"
 	"github.com/mohammedhassan/etl-pipeline/internal/logging"
 	"github.com/mohammedhassan/etl-pipeline/internal/metrics"
 )
